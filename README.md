@@ -5,7 +5,7 @@
 This is a simple Alpine-based Docker setup for running
 [hydrus server][hydrus-server] from source.
 
-The latest build runs [hydrus server version 345][hydrus-server-version].
+The latest build runs [hydrus server version 346][hydrus-server-version].
 
 ## Table of contents
 
@@ -33,7 +33,7 @@ By default, this will pull the latest build. To specify an image with a
 specific version of hydrus server, provide the version number as tag, e.g.:
 
 ```zsh
-user@local:~$ docker pull a1e7de48f89e/hydrus-server-docker:345
+user@local:~$ docker pull a1e7de48f89e/hydrus-server-docker:346
 ```
 
 See [here][docker-hub-tags] for all the available version numbers/tags.
@@ -160,13 +160,13 @@ You are welcome to help out!
 [MIT](LICENSE.md) © a1e7de48f89e
 
 [hydrus-server]: http://hydrusnetwork.github.io/hydrus/
-[hydrus-server-version]: https://github.com/hydrusnetwork/hydrus/releases/tag/v345
+[hydrus-server-version]: https://github.com/hydrusnetwork/hydrus/releases/tag/v346
 [docker-hub]: https://hub.docker.com/r/a1e7de48f89e/hydrus-server-docker/
 [docker-hub-tags]: https://hub.docker.com/r/a1e7de48f89e/hydrus-server-docker/tags/
 [docker]: https://www.docker.com/
 [semantic-versioning]: https://semver.org/
 
-[hydrus-server-badge]: https://img.shields.io/badge/hydrus%20server-version%20345-blue.svg
+[hydrus-server-badge]: https://img.shields.io/badge/hydrus%20server-version%20346-blue.svg
 
 [travis]: https://travis-ci.com/a1e7de48f89e/hydrus-server-docker
 [travis-badge]: https://travis-ci.com/a1e7de48f89e/hydrus-server-docker.svg
