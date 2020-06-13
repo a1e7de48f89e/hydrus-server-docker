@@ -23,7 +23,6 @@ of this schedule (e.g., important changes to hydrus server).
 + [Usage](#usage)
   + [Ports](#ports)
   + [Storage](#storage)
-+ [Donate](#donate)
 + [Maintainer](#maintainer)
 + [Contribute](#contribute)
 + [License](#license)
@@ -33,14 +32,14 @@ of this schedule (e.g., important changes to hydrus server).
 The easiest way to install is via [Docker Hub][docker-hub]:
 
 ```zsh
-user@local:~$ docker pull a1e7de48f89e/hydrus-server-docker
+user@local:~$ docker pull mtbl/hydrus-server-docker
 ```
 
 By default, this will pull the latest build. To specify an image with a
 specific version of hydrus server, provide the version number as tag, e.g.:
 
 ```zsh
-user@local:~$ docker pull a1e7de48f89e/hydrus-server-docker:393
+user@local:~$ docker pull mtbl/hydrus-server-docker:393
 ```
 
 Alternatively, you can also build the image yourself:
@@ -129,7 +128,7 @@ After creating your named volume, you can run the container. Here is a full
 example with all the options mentioned above:
 
 ```zsh
-user@local:~$ docker run -p 45870:45870 -p 45871:45871 -p 45872:45872 -v hydrus-server-data:/data -d a1e7de48f89e/hydrus-server-docker
+user@local:~$ docker run -p 45870:45870 -p 45871:45871 -p 45872:45872 -v hydrus-server-data:/data -d mtbl/hydrus-server-docker
 ```
 
 Specifying the same named volume every time a container is created gives each
@@ -138,20 +137,6 @@ of these instances access to the same persisted data.
 Of course, using a bind mount instead of a named volume is also possible but
 for performance reasons only recommended if you need easy access to the data on
 the host machine.
-
-## Donate
-
-If you like hydrus-server-docker and want to buy me a coffee, feel free to
-donate via PayPal:
-
-[![Donate via PayPal][paypal-image]][paypal]
-
-Alternatively, you can also send me BTC:
-
-![Donate BTC][btc-image]  
-`13jRyroNn8QF4mbGZxKS6mR3PsxjYTsGsu`
-
-Donations are unnecessary, but very much appreciated. :)
 
 ## Maintainer
 
@@ -169,8 +154,8 @@ You are welcome to help out!
 
 [hydrus-server]: http://hydrusnetwork.github.io/hydrus/
 [hydrus-server-version]: https://github.com/hydrusnetwork/hydrus/releases/tag/v393
-[docker-hub]: https://hub.docker.com/r/a1e7de48f89e/hydrus-server-docker/
-[docker-hub-tags]: https://hub.docker.com/r/a1e7de48f89e/hydrus-server-docker/tags/
+[docker-hub]: https://hub.docker.com/r/mtbl/hydrus-server-docker/
+[docker-hub-tags]: https://hub.docker.com/r/mtbl/hydrus-server-docker/tags/
 [docker]: https://www.docker.com/
 [semantic-versioning]: https://semver.org/
 
@@ -179,11 +164,7 @@ You are welcome to help out!
 [travis]: https://travis-ci.com/a1e7de48f89e/hydrus-server-docker
 [travis-badge]: https://travis-ci.com/a1e7de48f89e/hydrus-server-docker.svg
 
-[docker-hub-badge]: https://img.shields.io/docker/automated/a1e7de48f89e/hydrus-server-docker.svg
-
-[paypal]: https://www.paypal.me/a1e7de48f89e
-[paypal-image]: https://www.paypalobjects.com/webstatic/en_US/i/btn/png/blue-rect-paypal-26px.png
-[btc-image]: https://a1e7de48f89e/external/btc.png
+[docker-hub-badge]: https://img.shields.io/docker/automated/mtbl/hydrus-server-docker.svg
 
 [maintainer]: https://github.com/a1e7de48f89e
 [issues]: https://github.com/a1e7de48f89e/hydrus-server-docker/issues/new
