@@ -150,7 +150,7 @@ You are welcome to help out!
 
 ## License
 
-[MIT](LICENSE.md) © a1e7de48f89e
+[AGPLv3](LICENSE) © a1e7de48f89e
 
 [hydrus-server]: http://hydrusnetwork.github.io/hydrus/
 [hydrus-server-version]: https://github.com/hydrusnetwork/hydrus/releases/tag/v410
